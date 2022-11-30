@@ -522,11 +522,7 @@ a:hover{
     font-size:14px
 }
 .header .header-menu .navbar-nav>li:last-child{
-    float:right;
     width:130px
-}
-.header .header-menu .navbar-nav>li:last-child a{
-    background:#38a343
 }
 .header .header-menu .navbar-nav>li:last-child i{
     margin-right:7px

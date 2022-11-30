@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MotelsController;
+use App\Http\Controllers\DistrictsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +17,8 @@ use App\Http\Controllers\MotelsController;
 
 
 Route::get('/', [MotelsController::class, 'index']);
+Route::get('/dangky',[MotelsController::class, 'register']);
+Route::controller(DistrictsController::class)->group(function(){
+    route::get('/districts', 'index');
+});
 

@@ -7,9 +7,7 @@
     <title>Đăng ký tài khoản</title>
     <meta name="robots" content="noindex,nofollow">
     <link rel="icon" href="/images/favicon.ico" />
-    <style>
-      @import url(/content/site.min.css?v=20200336)
-    </style>
+    <link rel="stylesheet" href="/content/site.min.css" />
   </head>
   <body>
     <header class="header">
@@ -25,12 +23,6 @@
             <a href="#" data-toggle="modal" data-target="#pop-login">
               <i class="fa fa-sign-in"></i>
               <span>Đăng nhập</span>
-            </a>
-          </li>
-          <li>
-            <a href="/dang-tin.html">
-              <i class="fa fa-pencil-square-o"></i>
-              <span>Đăng tin</span>
             </a>
           </li>
           <li>
@@ -61,10 +53,6 @@
                   <div class="user-action">
                     <a href="/dang-nhap.html">Đăng nhập</a> | <a href="/dang-ky.html">Đăng ký</a>
                   </div>
-                  <a href="/dang-tin.html" class="user-post">
-                    <strong>
-                      <i class="fa fa-pencil-square-o"></i> Đăng tin </strong>
-                  </a>
                 </div>
                 <div style="float:right;width:10%"></div>
               </div>
@@ -187,10 +175,6 @@
               <li class="menu-item-has-children">
                 <a href="/huong-dan.html" rel="nofollow">Hướng dẫn</a>
               </li>
-              <li>
-                <a href="/dang-tin.html" title="Đăng tin">
-                  <i class="fa fa-pencil-square-o"></i>Đăng tin </a>
-              </li>
             </ul>
           </nav>
         </div>
@@ -235,150 +219,26 @@
                         <img src="/captcha/index?t=638053389129149472">
                       </div>
                     </div>
+                    <div class="span">
+                      <a href="#">Ban da co tai khoan? vui long dang nhap</a>
+                    </div>
                     <span class="field-validation-valid text-danger" data-valmsg-for="Captcha" data-valmsg-replace="true"></span>
                   </div>
                   <div class="form-group">
                     <button type="submit" class="btn btn-success btn-block" id="btnSubmit">
                       <i class="fa fa-user-plus"></i> Tạo tài khoản </button>
                   </div>
-                  <p class=" mgt-20">Bấm vào nút đăng ký tức là bạn đã đồng ý với <a href="/quy-dinh-su-dung.html" target="_blank">
-                      <b>quy định sử dụng</b>
-                    </a> của chúng tôi </p>
                 </form>
               </section>
-            </div>
-            <div class="col-xs-12 col-sm-1 col-md-1 hidden-xs"></div>
-            <div class="col-xs-12 col-sm-5 col-md-5">
-              <div class="right">
-                <p class="mgb-20">Đăng nhập bằng Facebook hoặc Google</p>
-                <section id="socialLoginForm">
-                  <div id="socialLoginList">
-                    <p>
-                    <form action="/Login/Facebook" method="post">
-                      <button type="submit" class="btn btn-social btn-bg-facebook btn-block" title="Đăng nhập bằng Facebook">
-                        <i class="fa fa-facebook"></i> Đăng nhập bằng Facebook </button>
-                    </form>
-                    </p>
-                    <p>
-                    <form action="/Login/Google" method="post">
-                      <button type="submit" class="btn btn-social btn-bg-google btn-block" title="Đăng nhập bằng Google">
-                        <i class="fa fa-google"></i> Đăng nhập bằng Google </button>
-                    </form>
-                    </p>
-                  </div>
-                </section>
-                <div class="mgt-25">
-                  <p>Bạn đã có tài khoản? <a href="/dang-nhap.html">Đăng nhập</a>
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <footer class="page-footer">
-      <div class="footer-deco"></div>
-      <div class="footer-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3">
-              <div class="footer-col">
-                <h4>Thuê phòng trọ</h4>
-                <ul>
-                  <li>
-                    <b>Website cho thuê phòng trọ, nhà trọ nhanh chóng và hiệu quả</b>
-                  </li>
-                  <li>
-                    <i class="fa fa-phone"></i>
-                    <a href="tel:0967833378" rel="nofollow" title="Hotline: 09678.333.78">Hotline: 09678.333.78</a>
-                  </li>
-                  <li>
-                    <i class="fa fa-envelope"></i>
-                    <a rel="nofollow" title="Gửi email tới nhatroviet@gmail.com" href="mailto:nhatroviet@gmail.com">Email: nhatroviet@gmail.com</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-              <div class="footer-col">
-                <h4>Thông tin</h4>
-                <ul class="about-link">
-                  <li class="menu-item">
-                    <a rel="nofollow" href="/gioi-thieu.html">Giới thiệu</a>
-                  </li>
-                  <li class="menu-item">
-                    <a rel="nofollow" href="/blog.html">Blog</a>
-                  </li>
-                  <li class="menu-item">
-                    <a rel="nofollow" href="/chinh-sach-bao-mat.html">Chính sách bảo mật</a>
-                  </li>
-                  <li class="menu-item">
-                    <a rel="nofollow" href="/quy-dinh-su-dung.html">Quy định sử dụng</a>
-                  </li>
-                  <li class="menu-item">
-                    <a rel="nofollow" href="/quy-che-hoat-dong.html">Quy chế hoạt động</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-              <div class="footer-col">
-                <h4>Hướng dẫn</h4>
-                <ul class="support-link">
-                  <li>
-                    <a rel="nofollow" href="/huong-dan.html">Hướng dẫn đăng tin</a>
-                  </li>
-                  <li>
-                    <a rel="nofollow" href="/bang-gia-dich-vu.html">Bảng giá dịch vụ</a>
-                  </li>
-                  <li>
-                    <a rel="nofollow" href="/quy-dinh-dang-tin.html">Quy định đăng tin</a>
-                  </li>
-                  <li>
-                    <a rel="nofollow" href="/lien-he.html">Liên hệ hỗ trợ</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-              <div class="footer-col">
-                <div class="col">
-                  <h4>Kết nối với chúng tôi</h4>
-                  <a target="_blank" rel="nofollow" style="display: inline-block; margin-right: 5px;" href="https://www.facebook.com/timnhatro">
-                    <img style="border: 1px solid #32599d; border-radius: 50%;" src="/images/icon_facebook.png" width="30">
-                  </a>
-                  <a target="_blank" rel="nofollow" style="display: inline-block; margin-right: 5px;" href="https://zalo.me/0967833378">
-                    <img style="border: 1px solid #00a1dc; border-radius: 50%;" src="/images/icon_zalo.png" width="30">
-                  </a>
-                  <a target="_blank" rel="nofollow" style="display: inline-block; margin-right: 5px;" href="viber://chat?number=0967833378">
-                    <img style="border: 1px solid #9f1cb8; border-radius: 50%;" src="/images/icon_viber.png" width="30">
-                  </a>
-                  <a target="_blank" rel="nofollow" style="display: inline-block;" href="https://twitter.com/timnhatro">
-                    <img style="border: 1px solid #54a3de; border-radius: 50%;" src="/images/icon_twitter.png" width="30">
-                  </a>
-                  <h4>Phương thức thanh toán</h4>
-                  <span class="bds_icon icon_visa"></span>
-                  <span class="bds_icon icon_mastercard"></span>
-                  <span class="bds_icon icon_jcb"></span>
-                  <br />
-                  <span class="bds_icon icon_internet_banking"></span>
-                  <span class="bds_icon icon_momo"></span>
-                  <span class="bds_icon icon_tienmat"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12 col-md-12">
-              <hr class="hr-dashed" />
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="footer-copyright">
         <div class="info_footer">
-          <p>Copyright © 2011 - 2020 Thuephongtro.com. Ghi rõ nguồn "Thuephongtro.com" khi phát hành lại thông tin từ website này.</p>
+          <p>Copyright © 2022 "Nhom THMNM - Gvhd: Vo Duc Quang"/p>
         </div>
       </div>
       <div class="pdb-50 visible-xs"></div>
