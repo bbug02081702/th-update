@@ -11,9 +11,7 @@
     <meta name="placename" content="Việt Nam">
     <meta property="og:type" content="website">
     <link rel="icon" href="/images/favicon.ico" />
-    <style>
-      @import url(/content/site.min.css)
-    </style>
+    <link rel="stylesheet" href="/content/site.min.css" />
   </head>
   <body>
     <header class="header">
@@ -267,13 +265,13 @@
                     <div class="col-xs-12 col-md-6">
                       <div class="news-item item-vip5">
                         <div class="news-thumb">
-                          <a href="/cho-thue-phong-co-may-lanh-luy-ban-bich-q-tan-phu-163647.html">
+                          <a href="#">
                             <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8+B8AAucB8kTMRj8AAAAASUVORK5CYII=" data-src="https://img.thuephongtro.com/images/thumb/2020/11/06/20201106131918-as4fd.jpg" alt="Cho thuê phòng (có máy lạnh) Quận Tân Phú" class="lazyload">
                           </a>
                         </div>
                         <div class="news-info">
                           <h4 class="news-title text-lc">
-                            <a href="/cho-thue-phong-co-may-lanh-luy-ban-bich-q-tan-phu-163647.html" title="Cho thuê phòng (có máy lạnh) Quận Tân Phú">Cho thuê phòng (có máy lạnh) quận tân phú</a>
+                            <a href="#" title="Cho thuê phòng (có máy lạnh) Quận Tân Phú">Cho thuê phòng (có máy lạnh) quận tân phú</a>
                           </h4>
                           <div class="room-detail">
                             <div class="localtion">

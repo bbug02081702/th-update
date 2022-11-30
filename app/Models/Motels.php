@@ -8,4 +8,20 @@ use Illuminate\Database\Eloquent\Model;
 class Motels extends Model
 {
     use HasFactory;
+    protected $fillable = [
+      'title',
+      'description',
+      'price',
+      'area',
+      'count_view',
+      'address',
+      'latlng',
+      'images',
+      'user_id',
+      'category_id',
+      'districts_id',
+      'utilites',
+      'phone',
+      'approve',
+    ];
 }

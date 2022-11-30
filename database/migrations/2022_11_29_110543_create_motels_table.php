@@ -20,15 +20,15 @@ return new class extends Migration
             $table->integer('price')->nullable();
             $table->integer('area')->nullable();
             $table->integer('count_view')->nullable();
-            $table->string('address')->nullabel();
+            $table->string('address')->nullable();
             $table->string('latlng')->nullable();
             $table->string('images')->nullable();
-            $table->integer('user-id')->nulable();
+            $table->integer('user_id')->nullable();
             $table->integer('category_id')->nullable();
-            $table->integer('district_if')->nullable();
+            $table->integer('district_id')->nullable();
             $table->string('utilities')->nullable();
             $table->string('phone')->nullable();
-            $table->integer('approve')->nullable();
+            $table->string('approve')->nullable();
             $table->timestamps();
         });
     }

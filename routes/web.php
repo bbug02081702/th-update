@@ -19,6 +19,15 @@ use App\Http\Controllers\DistrictsController;
 Route::get('/', [MotelsController::class, 'index']);
 Route::get('/dangky',[MotelsController::class, 'register']);
 Route::controller(DistrictsController::class)->group(function(){
-    route::get('/districts', 'index');
+    Route::get('/districts', 'index');
+    Route::get('/admin', 'show')->name('admin');
+    // them motels
+    Route::get('/add','create')->name('add');
+    Route::post('/insert','story')->name('insert');
+    // edit motels
+    Route::get('/edit/{id}','edit')->name('edit');
+    Route::post('/update/{id}','update')->name('update');
+    //delete motels
+    Route::get('/delete/{id}', 'destroy')->name('delete');
 });
 
