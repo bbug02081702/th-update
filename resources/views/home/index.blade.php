@@ -125,7 +125,7 @@
           <div class="pull-left"></div>
           <div class="pull-right">
             <div class="user_welcome">
-              <a class="btn btn-login" href="/dang-ky.html" rel="nofollow">
+              <a class="btn btn-login" href="/dangky" rel="nofollow">
                 <i class="fa fa-user-plus"></i> Đăng ký </a>
               <button type="button" class="btn btn-login" data-toggle="modal" data-target="#pop-login">
                 <i class="fa fa-sign-in"></i> Đăng nhập </button>

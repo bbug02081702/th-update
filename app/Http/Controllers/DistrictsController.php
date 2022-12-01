@@ -10,6 +10,10 @@ use Illuminate\Support\Facades\DB;
 class DistrictsController extends Controller
 {
     //
+    public function flot(){
+        return view('pages.charts.flot');
+    }
+
      public function index(){
         $data = DB::table('motels')->get();
         return view('home.index',compact('data'));

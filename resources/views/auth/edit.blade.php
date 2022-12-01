@@ -25,12 +25,10 @@
                     <label for="approve" class="form-label">Approve</label>
                     <input type="text" name="approve" value="{{$data->approve}}" class="form-control" id="">
                 </div>
-                <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-3">Dong y</button>
-                </div>
-                <div class="col-auto">
+                
+                <button type="submit" class="btn btn-primary">Dong y</button>
+               
                 <a href="{{route('admin')}}" type="button" class="btn btn-success">Tro ve</a>
-                </div>
               </form>
           </div>
         </div>

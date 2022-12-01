@@ -17,11 +17,16 @@ use App\Http\Controllers\DistrictsController;
 */
 
 
-// Route::get('/', [MotelsController::class, 'index']);
-Route::get('/dangky',[MotelsController::class, 'register']);
+
+
+Route::controller(MotelsController::class)->group(function(){
+      Route::get('/dangky', 'register');
+});
+
+
 Route::controller(DistrictsController::class)->group(function(){
      Route::get('/','index');
-
+     Route::get('/flot', 'flot');
     // Route::get('/','index');
     Route::get('/admin', 'show')->name('admin');
     // them motels
