@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MotelsController;
 use App\Http\Controllers\DistrictsController;
 
@@ -16,10 +17,12 @@ use App\Http\Controllers\DistrictsController;
 */
 
 
-Route::get('/', [MotelsController::class, 'index']);
+// Route::get('/', [MotelsController::class, 'index']);
 Route::get('/dangky',[MotelsController::class, 'register']);
 Route::controller(DistrictsController::class)->group(function(){
-    Route::get('/districts', 'index');
+     Route::get('/','index');
+
+    // Route::get('/','index');
     Route::get('/admin', 'show')->name('admin');
     // them motels
     Route::get('/add','create')->name('add');
@@ -30,4 +33,15 @@ Route::controller(DistrictsController::class)->group(function(){
     //delete motels
     Route::get('/delete/{id}', 'destroy')->name('delete');
 });
+
+//login
+Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::post('/loginproses', [LoginController::class, 'loginproses'])->name('loginproses');
+
+//register
+Route::get('/register', [LoginController::class, 'register'])->name('register');
+Route::post('/registeruser', [LoginController::class, 'registeruser'])->name('regiseteruser');
+
+//logout
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 

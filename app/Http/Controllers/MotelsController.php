@@ -13,4 +13,8 @@ class MotelsController extends Controller
     public function register(){
         return view('home.dangky');
     }
+
+    public function test(){
+        return view('admin.index');
+    }
 }

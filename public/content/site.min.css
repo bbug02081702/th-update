@@ -838,7 +838,7 @@ a:hover{
     margin-top:20px
 }
 .list-all-new .news-item .news-info .news-title{
-    max-height:34px;
+    /* max-height:34px; */
     line-height:18px;
     padding-right:0
 }

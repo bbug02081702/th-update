@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\Motels;
+use App\Models\Districts;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class DistrictsController extends Controller
 {
     //
      public function index(){
-        return view('motel.index');
+        $data = DB::table('motels')->get();
+        return view('home.index',compact('data'));
      }
 
      public function show(){

@@ -262,6 +262,7 @@
               <div class="panel-body">
                 <div class="list-all-new">
                   <div class="row" style="margin-top:-15px">
+                  @foreach($data as $row)
                     <div class="col-xs-12 col-md-6">
                       <div class="news-item item-vip5">
                         <div class="news-thumb">
@@ -271,7 +272,7 @@
                         </div>
                         <div class="news-info">
                           <h4 class="news-title text-lc">
-                            <a href="#" title="Cho thuê phòng (có máy lạnh) Quận Tân Phú">Cho thuê phòng (có máy lạnh) quận tân phú</a>
+                            <a href="#" title="">{{$row->title}}</a>
                           </h4>
                           <div class="room-detail">
                             <div class="localtion">
@@ -285,13 +286,13 @@
                                 <span>
                                   <i class="fa fa-map-marker"></i>
                                   <b>
-                                    <a href="/cho-thue-phong-tro-tan-phu">Tân Phú, Hồ Chí Minh</a>
+                                    <a href="">Tân Phú, Hồ Chí Minh</a>
                                   </b>
                                 </span>
                               </div>
                               <div class="mgt-5 clearfix">
                                 <span class="price">
-                                  <b>2 Triệu/tháng</b>
+                                  <b>{{$row->price}} Triệu/tháng</b>
                                 </span>
                               </div>
                             </div>
@@ -299,117 +300,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-xs-12 col-md-6">
-                      <div class="news-item item-vip5">
-                        <div class="news-thumb">
-                          <a href="/phong-homestay-cuc-chill-khu-vuc-nga-tu-ga-166651.html">
-                            <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8+B8AAucB8kTMRj8AAAAASUVORK5CYII=" data-src="https://img.thuephongtro.com/images/thumb/2021/03/04/20210304112426-35eze.jpg" alt="Phòng Homestay cực chill Ngã Tư Ga gần NTTU" class="lazyload">
-                          </a>
-                        </div>
-                        <div class="news-info">
-                          <h4 class="news-title text-lc">
-                            <a href="/phong-homestay-cuc-chill-khu-vuc-nga-tu-ga-166651.html" title="Phòng Homestay cực chill Ngã Tư Ga gần NTTU">Phòng homestay cực chill ngã tư ga gần nttu</a>
-                          </h4>
-                          <div class="room-detail">
-                            <div class="localtion">
-                              <div class="clearfix">
-                                <span>
-                                  <i class="fa fa-area-chart"></i>
-                                  <b>30 m&#178;</b>
-                                </span>
-                              </div>
-                              <div class="clearfix">
-                                <span>
-                                  <i class="fa fa-map-marker"></i>
-                                  <b>
-                                    <a href="/cho-thue-phong-tro-quan-12">Quận 12, Hồ Chí Minh</a>
-                                  </b>
-                                </span>
-                              </div>
-                              <div class="mgt-5 clearfix">
-                                <span class="price">
-                                  <b>3.6 Triệu/tháng</b>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                      <div class="news-item item-vip5">
-                        <div class="news-thumb">
-                          <a href="/chdv-homestay-full-noi-that-pham-van-chieu-go-vap-168918.html">
-                            <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8+B8AAucB8kTMRj8AAAAASUVORK5CYII=" data-src="https://img.thuephongtro.com/images/thumb/2022/06/25/20220625115247-obkg1.jpg" alt="CHDV Homestay full nội thất Phạm Văn Chiêu, Gò Vấp" class="lazyload">
-                          </a>
-                        </div>
-                        <div class="news-info">
-                          <h4 class="news-title text-lc">
-                            <a href="/chdv-homestay-full-noi-that-pham-van-chieu-go-vap-168918.html" title="CHDV Homestay full nội thất Phạm Văn Chiêu, Gò Vấp">Chdv homestay full nội thất phạm văn chiêu, gò vấp</a>
-                          </h4>
-                          <div class="room-detail">
-                            <div class="localtion">
-                              <div class="clearfix">
-                                <span>
-                                  <i class="fa fa-area-chart"></i>
-                                  <b>30 m&#178;</b>
-                                </span>
-                              </div>
-                              <div class="clearfix">
-                                <span>
-                                  <i class="fa fa-map-marker"></i>
-                                  <b>
-                                    <a href="/cho-thue-phong-tro-go-vap">Gò Vấp, Hồ Chí Minh</a>
-                                  </b>
-                                </span>
-                              </div>
-                              <div class="mgt-5 clearfix">
-                                <span class="price">
-                                  <b>4.5 Triệu/tháng</b>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                      <div class="news-item item-vip5">
-                        <div class="news-thumb">
-                          <a href="/cho-1-2-sinh-vien-nhan-vien-nu-thue-phong-tro-148453.html">
-                            <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8+B8AAucB8kTMRj8AAAAASUVORK5CYII=" data-src="/images/default.jpg" alt="Cho 1 nữ thuê phòng trọ tại 183F Quận 4" class="lazyload">
-                          </a>
-                        </div>
-                        <div class="news-info">
-                          <h4 class="news-title text-lc">
-                            <a href="/cho-1-2-sinh-vien-nhan-vien-nu-thue-phong-tro-148453.html" title="Cho 1 nữ thuê phòng trọ tại 183F Quận 4">Cho 1 nữ thuê phòng trọ tại 183f quận 4</a>
-                          </h4>
-                          <div class="room-detail">
-                            <div class="localtion">
-                              <div class="clearfix">
-                                <span>
-                                  <i class="fa fa-area-chart"></i>
-                                  <b>15 m&#178;</b>
-                                </span>
-                              </div>
-                              <div class="clearfix">
-                                <span>
-                                  <i class="fa fa-map-marker"></i>
-                                  <b>
-                                    <a href="/cho-thue-phong-tro-quan-4">Quận 4, Hồ Chí Minh</a>
-                                  </b>
-                                </span>
-                              </div>
-                              <div class="mgt-5 clearfix">
-                                <span class="price">
-                                  <b>1.8 Triệu/tháng</b>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    @endforeach
                   </div>
                 </div>
               </div>
