@@ -21,6 +21,8 @@ use App\Http\Controllers\DistrictsController;
 
 Route::controller(MotelsController::class)->group(function(){
       Route::get('/dangky', 'register');
+      Route::get('/motels/list/{id}', 'motelviews');
+      Route::post('/motels/list/search', 'searchNameMotels');
 });
 
 

@@ -191,39 +191,38 @@
             <h3 class="title">Tìm kiếm nhanh</h3>
             <div class="bs-content">
               <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-2">
-                  <select id="ddlPostCate" name="CategoryId" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                    <option value="0">Loại tin</option>
-                  </select>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-2">
-                  <select id="ddlProvince" name="ProvinceId" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                    <option value="">Tỉnh thành</option>
-                  </select>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-2">
-                  <select id="ddlDistrict" name="DistrictId" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                    <option value="0">Quận huyện</option>
-                  </select>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-2">
-                  <select id="ddlStreet" name="StreetId" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                    <option value="0">Đường phố</option>
-                  </select>
+                  <form action="/motels/list/search" method="POST">
+                    @csrf
+                    <div class="row filter-row">
+                        <div class="col-sm-6 col-md-3">  
+                            <div class="form-group form-focus">
+                                <input type="text" placeholder="Tim kiem theo ten" class="form-control floating" name="name">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">  
+                            <div class="form-group form-focus">
+                                <input type="text" placeholder="Tim kiem theo gia" class="form-control floating" name="price">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3"> 
+                            <div class="form-group form-focus">
+                                <input type="text" placeholder="Tim kiem theo vi tri" class="form-control floating" name="address">
+                            </div>
+                        </div>
+                        <div class="bs-search">  
+                        <button type="sumit" class="btn btn-warning btn-block"><i class="fa fa-search"></i> Search </button>  
+                        </div>
+                    </div>
+                  </form>
+                <!-- <div class="col-xs-12 col-sm-6 col-md-2">
+                  
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-2">
                   <select id="ddlPrice" name="PriceId" style="width:100%" class="form-control">
                     <option value="-1">Mức giá</option>
-                    <option value="0">Thỏa thuận</option>
                     <option value="1">Dưới 1 triệu</option>
                     <option value="2">1 triệu - 2 triệu</option>
                     <option value="3">2 triệu - 3 triệu</option>
-                    <option value="4">3 triệu - 5 triệu</option>
-                    <option value="5">5 triệu - 7 triệu</option>
-                    <option value="6">7 triệu - 10 triệu</option>
-                    <option value="7">10 triệu - 15 triệu</option>
-                    <option value="8">15 triệu - 20 triệu</option>
-                    <option value="9">Trên 20 triệu</option>
                   </select>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-2">
@@ -232,21 +231,14 @@
                     <option value="0">Chưa xác định</option>
                     <option value="1">Dưới 20 m2</option>
                     <option value="2">20 - 30 m2</option>
-                    <option value="3">30 - 50 m2</option>
-                    <option value="4">50 - 60 m2</option>
-                    <option value="5">60 - 70 m2</option>
-                    <option value="6">70 - 80 m2</option>
-                    <option value="7">80 - 90 m2</option>
-                    <option value="8">90 - 100 m2</option>
-                    <option value="9">Trên 100 m2</option>
                   </select>
-                </div>
+                </div> -->
               </div>
             </div>
-            <div class="bs-search">
+            <!-- <div class="bs-search">
               <button class="btn btn-warning btn-block" id="btnSearch">
                 <i class="fa fa-search"></i> Tìm kiếm </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -272,7 +264,7 @@
                         </div>
                         <div class="news-info">
                           <h4 class="news-title text-lc">
-                            <a href="#" title="">{{$row->title}}</a>
+                            <a href="{{url('/motels/list/'.$row->id)}}" title="">{{$row->title}}</a>
                           </h4>
                           <div class="room-detail">
                             <div class="localtion">
