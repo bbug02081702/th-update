@@ -236,9 +236,9 @@
           </li>
           <li class="nav-header">MANAGER</li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="/manager/user" class="nav-link">
               <i class="nav-icon far fa-circle text-info"></i>
-              <p>Motels</p>
+              <p>Users</p>
             </a>
           </li>
           <li class="nav-item">
@@ -263,12 +263,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard v3</h1>
+            <h1 class="m-0">Dashboard v1</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v3</li>
+              <li class="breadcrumb-item active">Dashboard v1</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->

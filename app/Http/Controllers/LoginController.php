@@ -38,7 +38,7 @@ class LoginController extends Controller
             'remember_token' => Str::random(60),
         ]);
         //  dd($user);
-        return redirect('admin/login');
+        return \redirect('login');
     }
 
     public function logout(){

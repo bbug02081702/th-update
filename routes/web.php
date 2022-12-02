@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MotelsController;
 use App\Http\Controllers\DistrictsController;
@@ -17,7 +18,21 @@ use App\Http\Controllers\DistrictsController;
 */
 
 
+//---------------Quan ly user ---------------//
 
+Route::controller(UserController::class)->group(function(){
+      Route::get('/manager/user', 'index')->name('manager/user');
+    // add user 
+      Route::get('/add/user','create')->name('add/user');
+    // xu ly add user
+      Route::post('/insert/user','store')->name('insert/user');
+      //xu edit user
+      Route::get('/edit/user/{id}', 'edit')->name('edit/user');
+      // xu ly cap nhat user se edit
+      Route::post('/update/user/{id}', 'update')->name('update/user');
+      // xu ly xoa user
+      Route::get('/delete/user/{id}', 'destroy')->name('delete/user');
+});
 
 Route::controller(MotelsController::class)->group(function(){
       Route::get('/dangky', 'register');
