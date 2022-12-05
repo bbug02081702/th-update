@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard 3</title>
+  <title>AdminLTE</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -33,7 +33,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
+        <a href="" class="nav-link">Trang chu</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
@@ -204,7 +204,7 @@
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Dashboard
+                Quan ly 
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -212,7 +212,7 @@
               <li class="nav-item">
                 <a href="/admin" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
+                  <p>Danh sach phong tro</p>
                 </a>
               </li>
             </ul>
@@ -221,7 +221,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Charts
+                Bieu do
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -244,6 +244,7 @@
           <li class="nav-item">
             <a href="/logout" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
+              <!-- <i class="fa fa-sign-out" aria-hidden="true"></i> -->
               <p>
                 Dang xuat
               </p>

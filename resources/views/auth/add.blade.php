@@ -12,20 +12,28 @@
               <form action="{{route('insert')}}" method="post" enctye="mutilpart/form-data">
                 @csrf
                 <div class="mb-3">
-                    <label for="Title" class="form-label">Title</label>
-                    <input type="text" name="title" class="form-control" id="" placeholder="Nhap title">
+                    <label for="Title" class="form-label">Tieu de</label>
+                    <input type="text" name="title" class="form-control" id="" placeholder="Nhap tieu de">
                 </div>
                 <div class="mb-3">
-                    <label for="category_id" class="form-label">Category</label>
-                    <input type="number" name="category_id" class="form-control" id="" placeholder="Nhap category">
+                    <label for="category_id" class="form-label">Danh muc</label>
+                    <input type="number" name="category_id" class="form-control" id="" placeholder="Nhap danh muc">
                 </div>
                 <div class="mb-3">
-                    <label for="price" class="form-label">Price</label>
-                    <input type="text" name="price" class="form-control" id="" placeholder="Nhap price">
+                    <label for="area" class="form-label">Dien tich</label>
+                    <input type="number" name="area" class="form-control" id="" placeholder="Nhap dien tich">
                 </div>
                 <div class="mb-3">
-                    <label for="approve" class="form-label">Approve</label>
-                    <input type="text" name="approve" class="form-control" id="" placeholder="Nhap approve">
+                    <label for="price" class="form-label">Gia phong</label>
+                    <input type="text" name="price" class="form-control" id="" placeholder="Nhap gia phong">
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Dia chi</label>
+                    <input type="text" name="address" class="form-control" id="" placeholder="Nhap dia chi">
+                </div>
+                <div class="mb-3">
+                    <label for="approve" class="form-label">Trang thai</label>
+                    <input type="text" name="approve" class="form-control" id="" placeholder="Nhap trang thai">
                 </div>
                
                 <button type="submit" class="btn btn-primary">Dong y</button>

@@ -4,6 +4,9 @@
     @section('content')
     <h1 class="text-center"> Quan ly nguoi dung</h1>
     <div class="container">
+      <!-- <div class="form-group">
+        <input name="key" class="form-control" id="" placeholder="Tim kiem theo ten">
+      </div> -->
       <a href="{{route('add/user')}}" type="button" class="btn btn-success">Them</a>
       <div class="card">
         <div class="card-body">
@@ -40,7 +43,7 @@
                 @endforeach
               </tbody>
             </table>
-            {{$users->links()}}
+            {{$users->appends(request()->all())->links()}}
           </div>
         </div>
       </div>

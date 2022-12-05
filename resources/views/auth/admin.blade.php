@@ -4,6 +4,16 @@
     @section('content')
     <h1 class="text-center"> Quan ly danh sach phong tro</h1>
     <div class="container">
+    <form action="" class="form-inline" method="get">
+    <div class="form-group">
+        <input name="key" class="form-control" id="" placeholder="Tim kiem theo tieu de">
+    </div>
+    <button type="submit" class="btn btn-primary">
+     <i class="fas fa-search">
+
+     </i>
+    </button>
+    </form>
       <a href="{{route('add')}}" type="button" class="btn btn-success">Them</a>
       <div class="card">
         <div class="card-body">
@@ -14,7 +24,9 @@
                   <th scope="col">ID</th>
                   <th scope="col">Tieu de</th>
                   <th scope="col">Danh muc</th>
+                  <th scope="col">Dien tich</th>
                   <th scope="col">Gia phong</th>
+                  <th scope="col">Dia chi</th>
                   <th scope="col">Trang thai</th>
                   <th scope="col">Hanh dong</th>
                 </tr>
@@ -26,9 +38,11 @@
               @foreach($data as $index => $row)
                 <tr>
                   <th scope="row">{{$index + $data->firstItem()}}</th>
-                  <td>{{$row->title}}</td>
+                  <td><a href="{{url('/motels/list/'.$row->id)}}">{{$row->title}}</a></td>
                   <td>{{$row->category_id}}</td>
-                  <td>{{$row->price}}</td>
+                  <td>{{$row->area}} m&#178</td>
+                  <td>{{$row->price}} VND</td>
+                  <td>{{$row->address}}</td>
                   <td>{{$row->approve}}</td>
                   <td>
                   <a href="/edit/{{$row->id}}" type="button" class="btn btn-info">Sua</a>
@@ -38,7 +52,7 @@
                 @endforeach
               </tbody>
             </table>
-            {{$data->links()}}
+            {{$data->appends(request()->all())->links()}}
           </div>
         </div>
       </div>

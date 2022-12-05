@@ -15,12 +15,17 @@ class DistrictsController extends Controller
     }
 
      public function index(){
-        $data = DB::table('motels')->get();
+        $data = DB::table('motels')
+        
+        ->get();
         return view('home.index',compact('data'));
      }
 
      public function show(){
-      $data = Motels::paginate(5);
+      $data = Motels::orderBy('created_at', 'DESC')->paginate(2);
+      if($key=request()->key){
+        $data = Motels::orderBy('created_at', 'DESC')->where('title','like', '%'.$key.'%')->paginate(2);
+      }
       return view('auth.admin',compact('data'));
      }
 

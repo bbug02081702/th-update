@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
@@ -13,7 +14,6 @@ class UserController extends Controller
         $users = DB::table('users')->paginate(3);
         return view('admin.manageraccount.index', compact('users'));
     }
-
     // them user 
     public function create(){
         return view('admin.manageraccount.add');

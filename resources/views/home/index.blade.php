@@ -259,7 +259,7 @@
                       <div class="news-item item-vip5">
                         <div class="news-thumb">
                           <a href="#">
-                            <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8+B8AAucB8kTMRj8AAAAASUVORK5CYII=" data-src="https://img.thuephongtro.com/images/thumb/2020/11/06/20201106131918-as4fd.jpg" alt="Cho thuê phòng (có máy lạnh) Quận Tân Phú" class="lazyload">
+                            <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8+B8AAucB8kTMRj8AAAAASUVORK5CYII=" alt="Cho thuê phòng (có máy lạnh) Quận Tân Phú" class="lazyload">
                           </a>
                         </div>
                         <div class="news-info">
@@ -271,20 +271,37 @@
                               <div class="clearfix">
                                 <span>
                                   <i class="fa fa-area-chart"></i>
-                                  <b>10 m&#178;</b>
+                                  <b>Dien tich: {{$row->area}} m&#178;</b>
                                 </span>
                               </div>
                               <div class="clearfix">
                                 <span>
                                   <i class="fa fa-map-marker"></i>
                                   <b>
-                                    <a href="">Tân Phú, Hồ Chí Minh</a>
+                                    <a href=""> Dia chi: {{$row->address}}</a>
+                                  </b>
+                                </span>
+                              </div>
+                              <div class="clearfix">
+                                <span>
+                                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                  <b>
+                                    Ngay dang: {{$row->created_at}}
+                                  </b>
+                                </span>
+                              </div>
+                              <div class="clearfix">
+                                <span>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                  <b>
+                                    Luot xem: {{$row->count_view}}
                                   </b>
                                 </span>
                               </div>
                               <div class="mgt-5 clearfix">
                                 <span class="price">
-                                  <b>{{$row->price}} Triệu/tháng</b>
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                                  <b>Gia thue: {{$row->price}} Vnd/tháng</b>
                                 </span>
                               </div>
                             </div>
@@ -552,9 +569,9 @@
     <script src="/scripts/jqueryval.min.js"></script>
     <script src="/scripts/lazyload.min.js"></script>
     <script src="/scripts/main.min.js></script>
-																										<script src=" /scripts/common.min.js></script>
+    <script src="/scripts/common.min.js></script>
     <script src="/scripts/account.min.js></script>
-																										<script src=" /scripts/data.min.js"></script>
+    <script src=" /scripts/data.min.js"></script>
     <script src="/scripts/search_h.min.js"></script>
   </body>
 </html>

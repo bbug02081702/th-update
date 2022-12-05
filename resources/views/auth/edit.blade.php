@@ -10,19 +10,30 @@
               <form action="/update/{{$data->id}}" method="post" enctye="mutilpart/form-data">
                 @csrf
                 <div class="mb-3">
-                    <label for="Title" class="form-label">Title</label>
+                    <label for="Title" class="form-label">Tieu de</label>
                     <input type="text" name="title" value="{{$data->title}}" class="form-control" id="">
                 </div>
                 <div class="mb-3">
-                    <label for="category_id" class="form-label">Category</label>
+                    <label for="category_id" class="form-label">Danh muc</label>
                     <input type="number" name="category_id" value="{{$data->category_id}}" class="form-control" id="">
                 </div>
                 <div class="mb-3">
-                    <label for="price" class="form-label">Price</label>
-                    <input type="text" name="price" value="{{$data->price}}" class="form-control" id="">
+                    <label for="area" class="form-label">Dien tich</label>
+                    <input type="number" name="area" value="{{$data->area}}" class="form-control" id="">
                 </div>
                 <div class="mb-3">
-                    <label for="approve" class="form-label">Approve</label>
+                    <label for="price" class="form-label">Gia phong</label>
+                    <input type="text" name="price" value="{{$data->price}}" class="form-control" id="">
+                </div> <div class="mb-3">
+                    <label for="category_id" class="form-label">Danh muc</label>
+                    <input type="number" name="category_id" value="{{$data->category_id}}" class="form-control" id="">
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Dia chi</label>
+                    <input type="text" name="address" value="{{$data->address}}" class="form-control" id="">
+                </div>
+                <div class="mb-3">
+                    <label for="approve" class="form-label">Trang thai</label>
                     <input type="text" name="approve" value="{{$data->approve}}" class="form-control" id="">
                 </div>
                 

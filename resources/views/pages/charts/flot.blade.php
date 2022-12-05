@@ -193,7 +193,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Dashboard
+                Quan ly
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -201,7 +201,7 @@
               <li class="nav-item">
                 <a href="/admin" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
+                  <p>Danh sach phong tro</p>
                 </a>
               </li>
             </ul>
@@ -210,7 +210,7 @@
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Charts
+                Bieu do
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -244,7 +244,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Flot Charts</h1>
+            <h1>Bieu do flot</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">

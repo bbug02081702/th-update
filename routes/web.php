@@ -34,17 +34,23 @@ Route::controller(UserController::class)->group(function(){
       Route::get('/delete/user/{id}', 'destroy')->name('delete/user');
 });
 
+//---------------Quan ly user login-register ---------------//
 Route::controller(MotelsController::class)->group(function(){
+      //dang ky user-home
       Route::get('/dangky', 'register');
+      //luot xem content-home
       Route::get('/motels/list/{id}', 'motelviews');
+      //tim kiem content-home
       Route::post('/motels/list/search', 'searchNameMotels');
 });
 
+//---------------Quan ly motels ---------------//
 
 Route::controller(DistrictsController::class)->group(function(){
+  //url-home-user
      Route::get('/','index');
      Route::get('/flot', 'flot');
-    // Route::get('/','index');
+    // url admin-home
     Route::get('/admin', 'show')->name('admin');
     // them motels
     Route::get('/add','create')->name('add');
@@ -56,14 +62,14 @@ Route::controller(DistrictsController::class)->group(function(){
     Route::get('/delete/{id}', 'destroy')->name('delete');
 });
 
-//login
+//login-admin
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/loginproses', [LoginController::class, 'loginproses'])->name('loginproses');
 
-//register
+//register-admin
 Route::get('/register', [LoginController::class, 'register'])->name('register');
 Route::post('/registeruser', [LoginController::class, 'registeruser'])->name('regiseteruser');
 
-//logout
+//logout-admin
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
