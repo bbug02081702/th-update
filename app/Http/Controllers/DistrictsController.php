@@ -13,16 +13,23 @@ class DistrictsController extends Controller
     public function flot(){
         return view('pages.charts.flot');
     }
-
+     // hien thi motels moi dang nhat trang chu
      public function index(){
-        $data = DB::table('motels')
-        
-        ->get();
+        $data = DB::table('motels')->orderBY('created_at', 'DESC')->paginate(2);
+        //tìm kiếm theo title ở user trang chủ
+        if($title=request()->title){
+            $data = Motels::orderBy('created_at', 'DESC')->where('title','like', '%'.$title.'%')->get();
+          }
+        //tìm kiếm theo giá ở user trang chủ
+        if($price=request()->price){
+            $data = Motels::orderBY('created_at', 'DESC')->where('price', 'like' , '%'.$price.'%')->get();
+        }
         return view('home.index',compact('data'));
      }
-
+    //hien thi danh sach manager quản lý motels
      public function show(){
       $data = Motels::orderBy('created_at', 'DESC')->paginate(2);
+      //tim kiem theo title 
       if($key=request()->key){
         $data = Motels::orderBy('created_at', 'DESC')->where('title','like', '%'.$key.'%')->paginate(2);
       }

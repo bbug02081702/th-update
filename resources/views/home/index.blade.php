@@ -191,12 +191,12 @@
             <h3 class="title">Tìm kiếm nhanh</h3>
             <div class="bs-content">
               <div class="row">
-                  <form action="/motels/list/search" method="POST">
+                  <form action="{{route('search')}}" method="POST">
                     @csrf
                     <div class="row filter-row">
                         <div class="col-sm-6 col-md-3">  
                             <div class="form-group form-focus">
-                                <input type="text" placeholder="Tim kiem theo ten" class="form-control floating" name="name">
+                                <input type="text" placeholder="Tim kiem theo tieu de" class="form-control floating" name="title">
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-3">  
@@ -314,6 +314,8 @@
                 </div>
               </div>
             </div>
+            
+            <!-- content vip -->
             <div class="row">
               <div class="col-xs-12 col-md-3">
                 <h2 class="titleVip"> CHO THUÊ VIP </h2>
@@ -326,14 +328,14 @@
                     <div class="col-xs-12 col-md-6">
                       <div class="news-item item-vip2">
                         <div class="news-thumb">
-                          <a href="/cho-thue-phong-tro-ton-that-thuyet-quan-4-146331.html">
+                          <a href="">
                             <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8+B8AAucB8kTMRj8AAAAASUVORK5CYII=" data-src="https://img.thuephongtro.com/images/thumb/2020/10/08/20201008070713-mavi4.jpg" alt="Cho thuê phòng trọ Tôn Thất Thuyết Quận 4" class="lazyload">
                           </a>
                           <div class="icons">VIP</div>
                         </div>
                         <div class="news-info">
                           <h3 class="news-title">
-                            <a href="/cho-thue-phong-tro-ton-that-thuyet-quan-4-146331.html" title="Cho thuê phòng trọ Tôn Thất Thuyết Quận 4">Cho thuê phòng trọ tôn thất thuyết quận 4</a>
+                            <a href="" title="Cho thuê phòng trọ Tôn Thất Thuyết Quận 4">Cho thuê phòng trọ tôn thất thuyết quận 4</a>
                           </h3>
                           <div class="area mgt-5">
                             <span>
@@ -354,111 +356,6 @@
                           </div>
                           <div class="price mgt-5">
                             <span>2.5 Triệu/tháng</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                      <div class="news-item item-vip2">
-                        <div class="news-thumb">
-                          <a href="/phong-tro-moi-tinh-vua-xay-xong-co-giuong-ban-cong-wc-sat-dh-cntp-gan-aeon-tan-phu-159605.html">
-                            <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8+B8AAucB8kTMRj8AAAAASUVORK5CYII=" data-src="https://img.thuephongtro.com/images/thumb/2021/09/30/20210930141227-rdqqs.jpg" alt="PHÒNG TRỌ MỚI TINH 100% SANG TRỌNG, NỘI THẤT CAO CẤP, có Máy Lạnh, Máy giặt, Gác lửng, có thang máy" class="lazyload">
-                          </a>
-                          <div class="icons">VIP</div>
-                        </div>
-                        <div class="news-info">
-                          <h3 class="news-title">
-                            <a href="/phong-tro-moi-tinh-vua-xay-xong-co-giuong-ban-cong-wc-sat-dh-cntp-gan-aeon-tan-phu-159605.html" title="PHÒNG TRỌ MỚI TINH 100% SANG TRỌNG, NỘI THẤT CAO CẤP, có Máy Lạnh, Máy giặt, Gác lửng, có thang máy">Phòng trọ mới tinh 100% sang trọng, nội thất cao cấp, có máy lạnh, máy giặt, gác lửng, có thang máy</a>
-                          </h3>
-                          <div class="area mgt-5">
-                            <span>
-                              <i class="fa fa-area-chart"></i>
-                              <b>28 m&#178;</b>
-                            </span>
-                            <span class="rating" style="color: #fc0">
-                              <i class="fa fa-star"></i>
-                            </span>
-                          </div>
-                          <div class="localtion">
-                            <span>
-                              <i class="fa fa-map-marker"></i>
-                              <b>
-                                <a href="/cho-thue-phong-tro-tan-phu">Tân Phú, Hồ Chí Minh</a>
-                              </b>
-                            </span>
-                          </div>
-                          <div class="price mgt-5">
-                            <span>2.7 Triệu/tháng</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                      <div class="news-item item-vip2">
-                        <div class="news-thumb">
-                          <a href="/phong-tro-cao-cap-day-du-noi-that-dep-nhu-khach-san-gio-giac-tu-do-khu-biet-thu-sang-trong-167280.html">
-                            <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8+B8AAucB8kTMRj8AAAAASUVORK5CYII=" data-src="https://img.thuephongtro.com/images/thumb/2021/05/01/20210501111919-z0ha2.jpg" alt="PHÒNG TRỌ CAO CẤP, ĐẦY ĐỦ NỘI THẤT, đẹp như khách sạn, giờ giấc tự do, khu biệt thự sạng trọng" class="lazyload">
-                          </a>
-                          <div class="icons">VIP</div>
-                        </div>
-                        <div class="news-info">
-                          <h3 class="news-title">
-                            <a href="/phong-tro-cao-cap-day-du-noi-that-dep-nhu-khach-san-gio-giac-tu-do-khu-biet-thu-sang-trong-167280.html" title="PHÒNG TRỌ CAO CẤP, ĐẦY ĐỦ NỘI THẤT, đẹp như khách sạn, giờ giấc tự do, khu biệt thự sạng trọng">Phòng trọ cao cấp, đầy đủ nội thất, đẹp như khách sạn, giờ giấc tự do, khu biệt thự sạng trọng</a>
-                          </h3>
-                          <div class="area mgt-5">
-                            <span>
-                              <i class="fa fa-area-chart"></i>
-                              <b>30 m&#178;</b>
-                            </span>
-                            <span class="rating" style="color: #fc0">
-                              <i class="fa fa-star"></i>
-                            </span>
-                          </div>
-                          <div class="localtion">
-                            <span>
-                              <i class="fa fa-map-marker"></i>
-                              <b>
-                                <a href="/cho-thue-phong-tro-quan-7">Quận 7, Hồ Chí Minh</a>
-                              </b>
-                            </span>
-                          </div>
-                          <div class="price mgt-5">
-                            <span>2.2 Triệu/tháng</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                      <div class="news-item item-vip2">
-                        <div class="news-thumb">
-                          <a href="/phong-tro-moi-xay-rat-dep-gio-giac-tu-do-gan-lotte-q-7-167279.html">
-                            <img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8+B8AAucB8kTMRj8AAAAASUVORK5CYII=" data-src="https://img.thuephongtro.com/images/thumb/2021/05/01/20210501111329-hehq5.jpg" alt="PHÒNG TRỌ MỚI XÂY RẤT ĐẸP, GIỜ GIẤC TỰ DO, GẦN LOTTE Q.7" class="lazyload">
-                          </a>
-                          <div class="icons">VIP</div>
-                        </div>
-                        <div class="news-info">
-                          <h3 class="news-title">
-                            <a href="/phong-tro-moi-xay-rat-dep-gio-giac-tu-do-gan-lotte-q-7-167279.html" title="PHÒNG TRỌ MỚI XÂY RẤT ĐẸP, GIỜ GIẤC TỰ DO, GẦN LOTTE Q.7">Phòng trọ mới xây rất đẹp, giờ giấc tự do, gần lotte q.7</a>
-                          </h3>
-                          <div class="area mgt-5">
-                            <span>
-                              <i class="fa fa-area-chart"></i>
-                              <b>25 m&#178;</b>
-                            </span>
-                            <span class="rating" style="color: #fc0">
-                              <i class="fa fa-star"></i>
-                            </span>
-                          </div>
-                          <div class="localtion">
-                            <span>
-                              <i class="fa fa-map-marker"></i>
-                              <b>
-                                <a href="/cho-thue-phong-tro-quan-7">Quận 7, Hồ Chí Minh</a>
-                              </b>
-                            </span>
-                          </div>
-                          <div class="price mgt-5">
-                            <span>2 Triệu/tháng</span>
                           </div>
                         </div>
                       </div>

@@ -27,14 +27,14 @@ class MotelsController extends Controller
     }
 
     //search by title
-    public function searchNameMotels(Request $request){
-        if($request->title){
-            $titleMotel = DB::table('motels')
-            ->select('motels.*')
-            ->where('motels.title', 'LIKE' , '%'.$request->title.'%') 
-            ->get(); 
-        }
-        return view('home.index',compact('titleMotels'));
-    }
+    // public function searchNameMotels(Request $request){
+    //     if($request->title){
+    //         $row = DB::table('motels')
+    //         ->select('motels.*')
+    //         ->where('motels.title', 'LIKE' , '%'.$request->title.'%') 
+    //         ->get(); 
+    //     }
+    //     return view('home.index',compact('row'));
+    // }
 
 }

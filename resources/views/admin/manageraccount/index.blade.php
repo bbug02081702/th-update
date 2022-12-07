@@ -18,7 +18,6 @@
                   <th scope="col">Name</th>
                   <th scope="col">Email</th>
                   <th scope="col">So dien thoai</th>
-                  <th scopre="col">Mat khau</th>
                   <th scopre="col">Quyen</th>
                   <th scope="col">Hanh dong</th>
                 </tr>
@@ -33,7 +32,6 @@
                   <td>{{$row->name}}</td>
                   <td>{{$row->email}}</td>
                   <td>{{$row->phone}}</td>
-                  <td>{{$row->password}}</td>
                   <td>{{$row->role}}</td>
                   <td>
                   <a href="/edit/user/{{$row->id}}" type="button" class="btn btn-info">Sua</a>

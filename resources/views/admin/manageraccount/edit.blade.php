@@ -23,10 +23,10 @@
                     <label for="phone" class="form-label">So dien thoai</label>
                     <input type="text" value="{{$users->phone}}" name="phone" class="form-control" id="" >
                 </div>
-                <div class="mb-3">
+                <!-- <div class="mb-3">
                     <label for="role" class="form-label">Mat khau</label>
                     <input type="password" value="{{$users->password}}" name="password" class="form-control" id="">
-                </div>
+                </div> -->
                 <div class="mb-3">
                     <label for="role" class="form-label">Quyen</label>
                     <input type="text" value="{{$users->role}}" name="role" class="form-control" id="">

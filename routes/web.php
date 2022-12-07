@@ -41,14 +41,14 @@ Route::controller(MotelsController::class)->group(function(){
       //luot xem content-home
       Route::get('/motels/list/{id}', 'motelviews');
       //tim kiem content-home
-      Route::post('/motels/list/search', 'searchNameMotels');
+      // Route::post('/motels/list/search', 'searchNameMotels');
 });
 
 //---------------Quan ly motels ---------------//
 
 Route::controller(DistrictsController::class)->group(function(){
   //url-home-user
-     Route::get('/','index');
+     Route::post('/','index')->name('search');
      Route::get('/flot', 'flot');
     // url admin-home
     Route::get('/admin', 'show')->name('admin');
